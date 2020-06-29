@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:background="#ff89a8"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="105dp"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/id_iv_choosefiletype"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ysrl_dialog_back"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:background="@drawable/btn_details_selector"
+        android:id="@+id/id_up_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/doct_icon"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="20dp"
+                    android:text="要上传监护记录\n给医生吗"
+                    android:background="@drawable/dialog_title_bg"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp">
+                <CheckBox
+                    android:gravity="center_horizontal"
+                    android:id="@+id/id_checkBox_imagefile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tiaokuan_check_selector"
+                    android:drawablePadding="10dp"
+                    android:checked="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:button="@null"
+                    android:textColor="#ffffff"
+                    android:text="上传图像" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                >
+                <CheckBox
+                    android:id="@+id/id_checkBox_voicefile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tiaokuan_check_selector"
+                    android:drawablePadding="10dp"
+                    android:checked="false"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:text="是否上传声音" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/self_info_back_shape">
+            <Button android:background="@drawable/btn_details_selector"
+                android:padding="10dp"
+                android:id="@+id/id_btn_uploadfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="上传"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_login_shape"
+                android:padding="10dp"
+                android:id="@+id/id_btn_upcancel"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#ff89a8"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/id_fragment_upfileprogress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送中..."
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

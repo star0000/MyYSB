@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/mine_personal_bg"
+    android:id="@+id/ll_personal"
+    >
+
+    <ImageView
+        android:id="@+id/self_iv_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/x12"
+        android:src="@drawable/mine_setup_button" />
+
+    <com.mds.myysb.widget.RoundImageView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x60"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x10"
+        android:src="@drawable/mine_icon_login"
+        app:type="0" />
+
+    <TextView
+        android:id="@+id/tv_muserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x4"
+        android:text="@string/mine_tv_muserName"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tvSize_sp16" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x4">
+        <TextView
+            android:id="@+id/tv_userEDC_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#33cccc"
+            android:padding="@dimen/x2"
+            android:text="@string/mine_tv_userEDC_icon"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/tvSize_sp12" />
+        <TextView
+            android:id="@+id/tv_userEDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/tv_userEDC_icon"
+            android:layout_centerVertical="true"
+            android:text="---"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tvSize_sp14" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/btn_login_shape">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_doctor_info"
+                android:text="@string/mine_tv_doctor_info"
+                style="@style/mine_info_title" />
+            <View
+                android:id="@+id/iv_doctor_info_sel"
+                android:layout_below="@+id/tv_doctor_info"
+                style="@style/mine_info_title_iv"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_basic_info"
+                android:text="@string/mine_tv_basic_info"
+                style="@style/mine_info_title"/>
+            <View
+                android:id="@+id/iv_basic_info_sel"
+                android:layout_below="@+id/tv_basic_info"
+                style="@style/mine_info_title_iv"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_account_info"
+                android:text="@string/mine_tv_account_info"
+                style="@style/mine_info_title"/>
+            <View
+                android:id="@+id/iv_account_info_sel"
+                android:layout_below="@+id/tv_account_info"
+                style="@style/mine_info_title_iv"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@drawable/btn_login_shape">
+        <LinearLayout
+            android:id="@+id/ll_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_registrationID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_registrationID"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="true"
+                app:tv_hint="@string/mine_tv_userName"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="true"
+                app:tv_hint="@string/mine_tv_birthday"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_EDC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="true"
+                app:tv_hint="@string/mine_tv_EDC"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_CASRN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_CASRN"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_fileCreat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_fileCreat"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="true"
+                app:tv_hint="@string/mine_tv_location"
+                app:isShowEt="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_doctor_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/zhidingdoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_zhidingdoctor"
+                app:isShowEt="0"/>
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_hospital"
+                app:isShowEt="0"/>
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_doctor"
+                app:isShowEt="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_nowForegift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_nowForegift"
+                app:isShowEt="0"/>
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_nowPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_nowPay"
+                app:isShowEt="0"/>
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_nowPrize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_nowPrize"
+                app:isShowEt="0"/>
+            <View  style="@style/line" />
+            <com.mds.myysb.widget.MineInfoTextView
+                android:id="@+id/tv_nowBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShow="false"
+                app:tv_hint="@string/mine_tv_nowBalance"
+                app:isShowEt="0"/>
+            <Button
+                android:id="@+id/btn_details"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x20"
+                android:layout_marginLeft="@dimen/x35"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/btn_details_selector"
+                android:text="@string/mine_btn_details"
+                android:textColor="@color/phone_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/tvSize_sp16"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_basicinfoNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_basicinfoNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:src="@drawable/mine_clean" />
+        <ImageView
+            android:id="@+id/img_basicinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/self_bianji_sel" />
+    </LinearLayout>
+
+
+</LinearLayout>

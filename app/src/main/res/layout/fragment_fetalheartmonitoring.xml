@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_jiance_taixin"
+    android:background="@drawable/jian_detail_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/x3"
+        android:background="@color/white">
+        <!--<ImageView-->
+            <!--android:id="@+id/taixin_iv_back"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="@dimen/x10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/img_red_back" />-->
+        <LinearLayout
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y15"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/jiance_tv_title_left"
+                android:layout_width="@dimen/x90"
+                android:text="胎心记录"
+                android:textSize="@dimen/tvSize_sp14"
+                android:layout_height="match_parent"
+                android:background="@drawable/indicator_left_sel"
+                android:textColor="@color/white"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/jiance_tv_title_right"
+                android:gravity="center"
+                android:layout_width="@dimen/x90"
+                android:text="实时监测"
+                android:textSize="@dimen/tvSize_sp14"
+                android:textColor="@color/date_picker_text_light"
+                android:layout_height="match_parent"
+                android:background="@drawable/jian_right_normal"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/jiance_iv_title_icon"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jian_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

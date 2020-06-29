@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mds.myysb">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 危险权限 存储权限组 group.STORAGE -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 危险权限 麦克风权限组 group.MICROPHONE -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 危险权限 定位权限组 group.LOCATION -->
+    <!-- 允许一个程序访问精确位置(如GPS） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 允许一个程序访问CellID或WiFi热点来获取大致的位置。广播接收器接收BluetoothDevice.ACTION_FOUND广播需要该权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.LineChartActivityReView"></activity>
+        <activity android:name=".ui.activity.ChooseUpFileType" />
+        <activity android:name=".ui.activity.WeightManagementActivity" />
+        <activity android:name=".ui.activity.NounInterpretationActivity" />
+        <activity android:name=".ui.activity.SystemActivity" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/FullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
+    </application>
+
+</manifest>

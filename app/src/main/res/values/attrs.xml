@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--声明自定义输入框样式-->
+    <declare-styleable name="editTextView">
+        <!--自定义输入框前面的小图标-->
+        <attr name="input_icon" format="reference"></attr>
+        <!--自定义输入框提示内容-->
+        <attr name="input_hint" format="string"></attr>
+        <!--自定义输入框输入的内容是否需要以密文的形式展示-->
+        <attr name="is_password" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <!--声明我的页面自定义TextView框样式-->
+    <declare-styleable name="mineInfoTextView">
+        <!--自定义TextView框前面的小图标-->
+        <attr name="isShow" format="boolean"></attr>
+        <attr name="tv_hint" format="string"></attr>
+        <attr name="isShowEt" format="integer"></attr>
+    </declare-styleable>
+
+
+    <!--声明自定义圆形/圆角头像框样式-->
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference"/>
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference"/>
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference"/>
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+</resources>

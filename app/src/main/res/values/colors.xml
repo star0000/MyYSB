@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="orange">#fd8aa9</color>
+
+    <color name="linecolor">#c3c3c3</color>
+
+    <color name="phone_color">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="list_divider">#e0e0e0</color>
+
+    <!-- 字体的颜色 -->
+    <color name="black">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="button_focus_color">#a0a0a0</color>
+
+    <color name="date_picker_text_light">#fd8aa9</color>
+    <color name="date_picker_text_dark">#333333</color>
+
+    <!--体重管理-->
+    <color name="weight1">#fb9281</color>
+    <color name="weight2">#a795eb</color>
+    <color name="weight3">#7dd2ff</color>
+
+    <color name="blue_b_color">#0033cc</color>
+
+    <!-- 灰色 -->
+    <color name="readed_color">#b2b2b2</color>
+
+    <color name="top_bar_normal_bg">#00acff</color>
+
+    <color name="btn_gray_pressed">#666667</color>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tvSize_sp12">12sp</dimen>
+    <dimen name="tvSize_sp13">13sp</dimen>
+    <dimen name="tvSize_sp14">14sp</dimen>
+    <dimen name="tvSize_sp15">15sp</dimen>
+    <dimen name="tvSize_sp16">16sp</dimen>
+    <dimen name="tvSize_sp20">20sp</dimen>
+
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/ll_antenatal_frame_time"
+        android:background="@drawable/loginbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x10"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff6fc"
+            android:textSize="@dimen/tvSize_sp15"
+            android:text="预产期是哪天?"
+            android:layout_marginTop="20dp"/>
+        <RelativeLayout
+            android:id="@+id/rl_ycq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/btn_login_shape">
+            <ImageView
+                android:id="@+id/img_ycq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ysrl_ycq_img"/>
+            <TextView
+                android:id="@+id/tv_ycq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_ycq"
+                android:layout_centerVertical="true"
+                android:text="我知道预产期"
+                android:textColor="#fd8aa9"
+                android:textSize="@dimen/tvSize_sp13" />
+            <TextView
+                android:id="@+id/tv_ycq_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x5"
+                android:drawableRight="@drawable/ysrl_next_img"
+                android:text="选择日期"
+                android:textSize="@dimen/tvSize_sp14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mcyj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_login_shape">
+            <ImageView
+                android:id="@+id/img_mcyj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ysrl_ycq_img"/>
+            <TextView
+                android:id="@+id/tv_mcyj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_mcyj"
+                android:text="不知道,计算预产期"
+                android:layout_centerVertical="true"
+                android:textColor="#fd8aa9"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tv_mcyj_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x5"
+                android:drawableRight="@drawable/ysrl_next_img"
+                android:text="输入您末次月经第一天"
+                android:textSize="@dimen/tvSize_sp12" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/btn_login_shape">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x10"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="产检医院:"
+                    android:textSize="@dimen/tvSize_sp13"/>
+                <Spinner
+                    android:id="@+id/spinner_yiyuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x5"
+                android:background="#ece6e8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x5"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x10"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="推荐医生:"
+                    android:textSize="@dimen/tvSize_sp13"/>
+                <Spinner
+                    android:id="@+id/spinner_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x5"
+                android:background="#ece6e8"/>
+
+            <TextView
+                android:id="@+id/tv_EDCNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="预产期计算说明"
+                android:drawableLeft="@drawable/tanhao"
+                android:gravity="center"
+                android:textSize="@dimen/tvSize_sp13"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/x10" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/btn_details_selector"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:textSize="@dimen/tvSize_sp20"
+                android:textColor="#fdf7f9"
+                android:text="确认"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_PregnancyCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/list_divider"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/phone_color">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="2019年12月"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/img_down_back"
+                android:drawablePadding="4dp"/>
+            <Button
+                android:id="@+id/btn_today"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x25"
+                android:textSize="@dimen/tvSize_sp14"
+                android:textColor="@color/white"
+                android:text="今天"
+                android:paddingHorizontal="@dimen/x10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@drawable/btn_details_selector"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/button_focus_color"/>
+
+
+        <ScrollView
+            android:id="@+id/srollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <com.haibin.calendarview.CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:calendar_padding="10dp"
+                        app:current_day_text_color="#ff0000"
+                        app:current_month_text_color="#333333"
+                        app:current_month_lunar_text_color="#CFCFCF"
+                        app:min_year="2019"
+                        app:max_year="2050"
+                        app:month_view="com.mds.myysb.widget.PregnancyMonthView"
+                        app:selected_text_color="#333"
+                        app:selected_theme_color="#80cfcfcf"
+                        app:other_month_text_color="#e1e1e1"
+                        app:other_month_lunar_text_color="#e1e1e1"
+                        app:scheme_text_color="#333"
+                        app:scheme_theme_color="#128c4b"
+                        app:selected_lunar_text_color="#CFCFCF"
+                        app:week_background="#fff"
+                        app:week_text_color="#111111"
+                        app:week_start_with="sun"
+                        app:month_view_show_mode="mode_only_current" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_NounInterpretation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rili_foot"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp">
+                    <TextView
+                        style="@style/rili_foot"
+                        android:text="孕早期"
+                        android:drawableLeft="@drawable/img_yun_zao"/>
+                    <TextView
+                        style="@style/rili_foot"
+                        android:text="孕中期"
+                        android:drawableLeft="@drawable/img_yun_zhong"/>
+                    <TextView
+                        style="@style/rili_foot"
+                        android:text="孕晚期"
+                        android:drawableLeft="@drawable/img_yun_wan" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:drawableRight="@drawable/img_black_next"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_WeightManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login_shape"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_marginRight="@dimen/x5"
+                    android:layout_marginTop="@dimen/y5">
+                    <ImageView
+                        android:id="@+id/img_weight_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/weight_icon"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/img_weight_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/tvSize_sp16"
+                        android:text="体重"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:src="@drawable/join_icon"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_marginRight="@dimen/x5"
+                    android:layout_marginTop="@dimen/y4"
+                    android:layout_marginBottom="@dimen/y4"
+                    android:background="@drawable/btn_login_shape">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x4"
+                        android:text="每日宝宝发育"
+                        android:textSize="@dimen/tvSize_sp16"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/tv_EveryDayBaby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x4"
+                        android:text="胎宝宝的身体部分幵始生长得比头部要快.支撑头部的脖颈现在也更加清晰、明显了，到本周末，TA的胳膊会长得更长一些，使它与身体的其TA部分成比例（不过，TA的腿还不够长，霈要再发育一段时间）."
+                        android:textSize="@dimen/tvSize_sp15" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x4"
+                        android:text="每日妈妈变化"
+                        android:textSize="@dimen/tvSize_sp16"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/tv_EveryDayMum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x4"
+                        android:text="由于体内雌性激素的增加，你的头发越来越乌黑发亮，头垢和头屑也可能减少.有的孕妈妈还可能觉得头发油油的了，这都是孕期特有的现象."
+                        android:textSize="@dimen/tvSize_sp15" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

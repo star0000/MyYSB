@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MyYSB</string>
+
+    <!--首页底部导航栏-->
+    <string name="yunshengrili">孕生日历</string>
+    <string name="taixinjiance">胎心监测</string>
+    <string name="weight">体重管理</string>
+    <string name="mine">我的</string>
+
+    <string name="show_NetWork">请检查网络</string>
+
+    <!--我的登录页面-->
+    <string name="mine_login_et_phone">请输入账号/手机号</string>
+    <string name="mine_login_et_verificationCode">请输入验证码</string>
+    <string name="mine_login_btn_verificationCode">获取验证码</string>
+    <string name="mine_login_tv_agree">点击登录即同意“</string>
+    <string name="mine_login_self_cb_agreeline">孕生宝服务协议</string>
+    <string name="mine_login_btn_login">登录/注册</string>
+    <!--我的基本信息页面-->
+    <string name="mine_tv_muserName">用户名</string>
+    <string name="mine_tv_userEDC_icon">预产期</string>
+    <string name="mine_tv_doctor_info">医生信息</string>
+    <string name="mine_tv_basic_info">基本信息</string>
+    <string name="mine_tv_account_info">账户信息</string>
+
+    <string name="mine_tv_registrationID">注册号:</string>
+    <string name="mine_tv_userName">用户名:</string>
+    <string name="mine_tv_birthday">生\u3000日:</string>
+    <string name="mine_tv_EDC">预产期:</string>
+    <string name="mine_tv_CASRN">登记号:</string>
+    <string name="mine_tv_fileCreat">建档期:</string>
+    <string name="mine_tv_location">所在地:</string>
+
+    <string name="mine_tv_zhidingdoctor">指定医生</string>
+    <string name="mine_tv_hospital">医院名:</string>
+    <string name="mine_tv_doctor">医生名:</string>
+
+    <string name="mine_tv_nowForegift">当前押金(元):</string>
+    <string name="mine_tv_nowPay">当前支出(元):</string>
+    <string name="mine_tv_nowPrize">当前奖金(元):</string>
+    <string name="mine_tv_nowBalance">余额统计(元):</string>
+    <string name="mine_btn_details">明细</string>
+
+    <string name="is_phone">手机号为空或手机号格式不正确</string>
+    <string name="verificationCode_eeror">获取验证码失败</string>
+    <string name="verificationCode">验证码为空</string>
+
+    <string name="message_permission_always_failed">请在设置中允许权限:\n\n%1$s</string>
+    <string name="message_permission_system">设置</string>
+    <string name="message_permission_cancel">取消</string>
+    <string name="message_permission_qq">权限请求</string>
+    <string name="message_permission_Failure">请求权限失败</string>
+
+    <string name="account_name_null">用户名不能为空</string>
+    <string name="birthday_null">生日不能为空</string>
+    <string name="child_birth_null">预产期不能为空</string>
+    <string name="area_null">所在地无效，请重新选择</string>
+    <string name="hospital_name_null">医院名不能为空</string>
+    <string name="doctor_name_null">医生名不能为空</string>
+    <string name="keep_sucessed">保存个人信息成功</string>
+    <string name="imgIcon_success">上传头像成功</string>
+
+
+    <string name="title_connected_to">已连接</string>
+    <string name="title_connecting">正在连接</string>
+    <string name="title_not_connected">设备未连接,请点击图标重新连接</string>
+    <string name="bt_not_enabled_leaving">蓝牙没打开,请打开蓝牙</string>
+
+    <string name="string_guid">GUID</string>
+    <string name="string_img">IMG</string>
+
+
+</resources>
